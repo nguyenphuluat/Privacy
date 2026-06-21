@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RenewDoc Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for RenewDoc, a private document expiry tracker for Android by LTeam.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7efe3;
+        --surface: #fffdf8;
+        --surface-soft: #fbf6ed;
+        --ink: #211b16;
+        --muted: #6b5d52;
+        --line: #e4d8c8;
+        --accent: #a85f36;
+        --accent-strong: #8a4b2a;
+        --accent-soft: #f2e8da;
+        --overlay: #f6efe5;
+        --shadow: 0 24px 64px rgba(43, 33, 24, 0.10);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+        line-height: 1.7;
+      }
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        background:
+          linear-gradient(180deg, rgba(255, 253, 248, 0.86), rgba(247, 239, 227, 0.96) 34rem),
+          radial-gradient(circle at 16% 0%, rgba(168, 95, 54, 0.14), transparent 28rem);
+      }
+      a { color: var(--accent-strong); text-decoration: none; border-bottom: 1px solid rgba(138, 75, 42, 0.28); }
+      a:hover { text-decoration: underline; }
+      .page { width: min(100% - 36px, 1040px); margin: 0 auto; padding: 58px 0; }
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        align-items: start;
+        padding: 36px 0 44px;
+        text-align: left;
+      }
+      .eyebrow {
+        display: inline-flex;
+        margin-bottom: 22px;
+        padding: 6px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 253, 248, 0.86);
+        color: var(--accent);
+        font-size: 0.86rem;
+        font-weight: 650;
+      }
+      h1 {
+        margin: 0;
+        max-width: 740px;
+        font-size: clamp(2.75rem, 6vw, 5.7rem);
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 0.96;
+      }
+      .intro { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 1.12rem; }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+        max-width: 760px;
+      }
+      .meta span {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+      .meta strong { color: var(--accent-strong); font-weight: 700; }
+      main {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(255, 253, 248, 0.95);
+        box-shadow: var(--shadow);
+      }
+      section { padding: 40px 44px; border-top: 1px solid var(--line); }
+      section:first-child { border-top: 0; }
+      h2 { margin: 0 0 14px; font-size: 1.44rem; font-weight: 560; line-height: 1.24; }
+      p { margin: 0 0 14px; }
+      p:last-child, ul:last-child { margin-bottom: 0; }
+      ul { margin: 0 0 16px; padding-left: 22px; }
+      li { margin: 7px 0; }
+      strong { color: var(--ink); }
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        padding: 18px;
+        background: var(--surface-soft);
+      }
+      .summary div {
+        min-height: 168px;
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--surface);
+      }
+      .summary h2 {
+        margin-bottom: 10px;
+        color: var(--accent-strong);
+        font-size: 0.98rem;
+        font-weight: 700;
+      }
+      .summary p { color: var(--muted); font-size: 0.95rem; }
+      .callout {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--accent-soft);
+        color: #5d5148;
+      }
+      footer { padding: 28px 4px 0; color: var(--muted); font-size: 0.92rem; text-align: center; }
+      @media (max-width: 760px) {
+        .page { width: min(100% - 22px, 980px); padding: 30px 0; }
+        header { display: block; padding-top: 18px; }
+        .meta { margin-top: 26px; }
+        .summary { grid-template-columns: 1fr; }
+        section { padding: 28px 24px; }
+        .summary { padding: 12px; }
+        .summary div { min-height: auto; padding: 24px; }
+        main { border-radius: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="eyebrow">Privacy policy</div>
+        <h1>RenewDoc Privacy Policy</h1>
+        <p class="intro">RenewDoc helps you track expiry dates, renewal reminders, profiles, and optional document photos on your Android device. This policy explains what information the app handles and how it is used.</p>
+        <div class="meta" aria-label="Policy metadata">
+          <span><strong>App</strong> RenewDoc</span>
+          <span><strong>Developer</strong> LTeam</span>
+          <span><strong>Effective</strong> June 21, 2026</span>
+          <span><strong>Contact</strong> <a href="mailto:lteamrick3@gmail.com">lteamrick3@gmail.com</a></span>
+        </div>
+      </header>
+
+      <main>
+        <section class="summary" aria-label="Privacy summary">
+          <div><h2>Your records stay on your device</h2><p>Document records, profiles, notes, renewal history, and photos are stored locally in the app. RenewDoc does not require an LTeam account or upload your document content to LTeam servers.</p></div>
+          <div><h2>Sensitive local data is encrypted</h2><p>RenewDoc encrypts stored document fields, profile fields, renewal records, and document photos using device-protected encryption before saving them in app storage.</p></div>
+          <div><h2>Google services are used</h2><p>The app uses Google services for ads, analytics, crash reporting, and Google Play subscription purchases.</p></div>
+        </section>
+
+        <section>
+          <h2>1. Information You Provide or Create</h2>
+          <p>When you use RenewDoc, you may create or save information such as document names, document categories, masked document numbers, owners, profile names, relationships, issue dates, expiry dates, reminder settings, notes, renewal history, and optional document photos.</p>
+          <p>This content is stored in RenewDoc's local app storage on your Android device. LTeam does not operate a RenewDoc cloud account system and does not automatically upload your document records, notes, profile details, or document photos to LTeam servers.</p>
+        </section>
+
+        <section>
+          <h2>2. Photos and Camera</h2>
+          <p>RenewDoc lets you add optional photos to a document by taking a photo with your camera or choosing images from your device. Camera access is used only when you choose to take a photo inside the app.</p>
+          <p>For gallery selection, RenewDoc uses Android's photo selection flow where available, so the app can receive only the images you choose instead of requesting broad access to your photo library. Selected or captured document photos are copied into RenewDoc's local app storage and encrypted before being saved.</p>
+        </section>
+
+        <section>
+          <h2>3. Local Storage and Encryption</h2>
+          <p>RenewDoc stores app data locally using Android app storage. Sensitive document fields, profile fields, renewal fields, and stored document photos are encrypted in the app using AES-GCM with a key managed through Android's device keystore where supported.</p>
+          <p>Encrypted photos may be temporarily decrypted into the app's cache so they can be displayed in the app. Cache files are intended for app display and may be removed by the app or Android storage management.</p>
+          <p>RenewDoc is configured not to use Android cloud backup for app data. Device behavior can still vary by Android version, manufacturer, device-transfer tools, and user settings.</p>
+        </section>
+
+        <section>
+          <h2>4. App Lock and Biometrics</h2>
+          <p>RenewDoc includes app lock and biometric unlock options to help protect access to the app on your device. Biometric verification is handled by Android system biometric APIs. RenewDoc does not receive or store your fingerprint, face data, or other biometric templates.</p>
+        </section>
+
+        <section>
+          <h2>5. Reminders and Notifications</h2>
+          <p>RenewDoc can show local notifications to remind you before a document expires. Notification permission is requested only when needed on Android versions that require it. Reminder content is generated from your local app data on your device.</p>
+          <p>You can turn reminders or notification permission off through the app settings or Android system settings. If notifications are disabled, RenewDoc may be unable to alert you before renewal deadlines.</p>
+        </section>
+
+        <section>
+          <h2>6. Information Collected Automatically</h2>
+          <p>RenewDoc uses Firebase Analytics to understand general app usage and improve the product. Analytics may include app interactions, screen views, app version, device information, approximate region, timestamps, and identifiers such as advertising or installation identifiers where permitted.</p>
+          <p>RenewDoc uses Firebase Crashlytics to diagnose crashes and improve reliability. Crash reports may include stack traces, app and operating system versions, device model, timestamps, diagnostic logs, and related technical information.</p>
+          <p>These Google services are not intended to receive the document names, document numbers, notes, profile names, or document photos you enter into RenewDoc.</p>
+        </section>
+
+        <section>
+          <h2>7. Advertising and Subscriptions</h2>
+          <p>RenewDoc may show native ads through Google AdMob in limited non-sensitive areas of the app. Google and its partners may process advertising identifiers, IP address, approximate location, device information, app activity, diagnostics, and ad interaction data to serve and measure ads, prevent fraud, and comply with legal requirements.</p>
+          <p>RenewDoc offers a premium subscription through Google Play Billing. Google Play processes payments and subscription management. LTeam receives purchase status needed to unlock premium features and remove ads while the subscription is active, but LTeam does not receive your full payment card details.</p>
+          <p>Where required, Google consent tools may be used to present and store advertising privacy choices. You can also manage ad personalization and your advertising ID through Android and Google settings.</p>
+        </section>
+
+        <section>
+          <h2>8. Permissions and Device Features</h2>
+          <ul>
+            <li><strong>Camera:</strong> used only when you choose to capture a document photo.</li>
+            <li><strong>Notifications:</strong> used to show renewal reminders after permission is granted where required.</li>
+            <li><strong>Biometric authentication:</strong> handled by Android to unlock the app when you enable biometric unlock.</li>
+            <li><strong>Internet and network access:</strong> may be used by Google services for ads, analytics, crash reporting, billing, and related app services.</li>
+            <li><strong>Local file provider:</strong> used internally so the camera and app can safely exchange temporary photo files.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>9. Third-Party Services</h2>
+          <p>The app may use the following third-party services, whose information practices are governed by their own policies:</p>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+            <li><a href="https://www.google.com/policies/privacy/partners/" rel="noopener">How Google uses information from apps that use Google services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" rel="noopener">Google AdMob</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a></li>
+            <li><a href="https://firebase.google.com/support/privacy#analytics" rel="noopener">Firebase Analytics</a></li>
+            <li><a href="https://firebase.google.com/support/privacy#crashlytics" rel="noopener">Firebase Crashlytics</a></li>
+            <li><a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms</a></li>
+            <li><a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>10. How Information Is Used</h2>
+          <ul>
+            <li>Provide document expiry tracking, profiles, renewal history, photo viewing, app lock, and reminder features.</li>
+            <li>Save app preferences such as language, theme, reminder choices, biometric unlock, and premium status.</li>
+            <li>Show and measure ads in the free version and manage applicable privacy choices.</li>
+            <li>Verify premium subscription status, unlock premium features, and remove ads while a subscription is active.</li>
+            <li>Understand app usage, diagnose crashes, improve reliability, and respond to support requests.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>11. Sharing and Disclosure</h2>
+          <p>LTeam does not sell your document records, profile content, notes, or document photos. Information may be processed by the third-party providers listed above as needed to deliver their services, when you intentionally share information with another app or service, when required by law, or when necessary to prevent fraud, abuse, or security threats.</p>
+        </section>
+
+        <section>
+          <h2>12. Data Retention and Deletion</h2>
+          <p>Document records, profiles, renewal history, settings, and photos stored locally remain on your device until you edit or delete them, clear the app's data, or uninstall the app. The app also provides data deletion options where available.</p>
+          <p>Data processed by Google services is retained according to Google's policies and your device or account settings.</p>
+        </section>
+
+        <section>
+          <h2>13. Security</h2>
+          <p>RenewDoc uses Android app storage, Android system permissions, biometric authentication options, and local encryption to help protect sensitive app data. No storage or transmission method is completely secure. You are responsible for protecting your device lock screen, Google account, backups, and physical access to your device.</p>
+        </section>
+
+        <section>
+          <h2>14. Children's Privacy</h2>
+          <p>RenewDoc is not directed to children under 13. LTeam does not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the app, contact LTeam so appropriate action can be taken.</p>
+        </section>
+
+        <section>
+          <h2>15. International Processing</h2>
+          <p>Third-party services used by RenewDoc may process technical, analytics, advertising, crash, or billing data on servers in different countries according to their applicable policies.</p>
+        </section>
+
+        <section>
+          <h2>16. Changes to This Policy</h2>
+          <p>LTeam may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+        </section>
+
+        <section>
+          <h2>17. Contact</h2>
+          <p>For questions, requests, or concerns about this Privacy Policy or RenewDoc privacy practices, contact LTeam at <a href="mailto:lteamrick3@gmail.com">lteamrick3@gmail.com</a>.</p>
+          <div class="callout">For faster support, include your app version, Android version, device model, and a short description of your request. Do not include private document numbers, document photos, or other sensitive document content unless it is necessary for your support request.</div>
+        </section>
+      </main>
+
+      <footer><p>Copyright &copy; 2026 LTeam. RenewDoc is a document expiry tracker for Android.</p></footer>
+    </div>
+  </body>
+</html>
