@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FastPdf Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for FastPdf, an on-device PDF and e-book reader for Android by LTeam.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eef1f7;
+        --surface: #ffffff;
+        --surface-soft: #f6f8fc;
+        --ink: #17202e;
+        --muted: #57657a;
+        --line: #dde4ef;
+        --accent: #2f5bd7;
+        --accent-strong: #2448ad;
+        --accent-soft: #edf2ff;
+        --shadow: 0 26px 70px rgba(23, 32, 46, 0.10);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.68;
+        -webkit-font-smoothing: antialiased;
+      }
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        background:
+          linear-gradient(180deg, #ffffff 0, rgba(238, 241, 247, 0.94) 30rem),
+          radial-gradient(circle at 82% 4%, rgba(47, 91, 215, 0.12), transparent 30rem);
+      }
+      a { color: var(--accent-strong); text-decoration: none; border-bottom: 1px solid rgba(36, 72, 173, 0.28); }
+      a:hover { color: var(--accent); border-bottom-color: currentColor; }
+      a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+      .page { width: min(100% - 36px, 1040px); margin: 0 auto; padding: 54px 0; }
+      header { padding: 30px 0 40px; }
+      .eyebrow {
+        display: inline-flex;
+        margin-bottom: 22px;
+        padding: 6px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        max-width: 780px;
+        font-size: clamp(2.6rem, 6vw, 5.4rem);
+        font-weight: 640;
+        letter-spacing: -0.03em;
+        line-height: 0.98;
+      }
+      .intro { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 1.1rem; }
+      .meta { display: flex; flex-wrap: wrap; gap: 10px 26px; max-width: 780px; margin-top: 28px; }
+      .meta span { color: var(--muted); font-size: 0.94rem; }
+      .meta strong { color: var(--accent-strong); font-weight: 700; }
+      main {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: var(--shadow);
+      }
+      section { padding: 38px 46px; border-top: 1px solid var(--line); }
+      section:first-child { border-top: 0; }
+      h2 { margin: 0 0 14px; font-size: 1.36rem; font-weight: 620; letter-spacing: -0.01em; line-height: 1.28; }
+      p { margin: 0 0 14px; }
+      p:last-child, ul:last-child { margin-bottom: 0; }
+      ul { margin: 0 0 16px; padding-left: 22px; }
+      li { margin: 7px 0; }
+      li::marker { color: var(--accent); }
+      strong { color: var(--ink); }
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        padding: 18px;
+        background: var(--surface-soft);
+      }
+      .summary div {
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--surface);
+      }
+      .summary h2 { margin-bottom: 10px; color: var(--accent-strong); font-size: 0.95rem; font-weight: 720; }
+      .summary p { color: var(--muted); font-size: 0.94rem; }
+      .callout {
+        margin-top: 20px;
+        padding: 20px 22px;
+        border: 1px solid #ccdaf7;
+        border-radius: 14px;
+        background: var(--accent-soft);
+        color: #3d4f6b;
+      }
+      .callout p:last-child { margin-bottom: 0; }
+      .links { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+      .links li { margin: 0; padding: 9px 0; border-top: 1px solid var(--line); }
+      .links li:first-child { border-top: 0; padding-top: 0; }
+      .links a { border-bottom: 0; }
+      .links a:hover { border-bottom: 1px solid currentColor; }
+      footer { padding: 30px 4px 0; color: var(--muted); font-size: 0.92rem; text-align: center; }
+      footer p { margin: 0; }
+      @media (max-width: 760px) {
+        .page { width: min(100% - 22px, 980px); padding: 26px 0; }
+        header { padding: 14px 4px 28px; }
+        .summary { grid-template-columns: 1fr; padding: 12px; }
+        .summary div { padding: 22px; }
+        section { padding: 28px 24px; }
+        main { border-radius: 18px; }
+      }
+      @media print {
+        body { background: #fff; }
+        body::before { display: none; }
+        .page { width: 100%; padding: 0; }
+        main { border: 0; box-shadow: none; }
+        section { page-break-inside: avoid; }
+        footer { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="eyebrow">Privacy policy</div>
+        <h1>FastPdf Privacy Policy</h1>
+        <p class="intro">FastPdf reads documents on your device. This policy lists only what the app accesses, the permissions it uses, and the Google services involved.</p>
+        <div class="meta" aria-label="Policy metadata">
+          <span><strong>App</strong> FastPdf (com.lteam.fastpdf)</span>
+          <span><strong>Developer</strong> LTeam</span>
+          <span><strong>Effective</strong> November 15, 2026</span>
+          <span><strong>Contact</strong> <a href="mailto:lteamrick3@gmail.com">lteamrick3@gmail.com</a></span>
+        </div>
+      </header>
+
+      <main>
+        <section class="summary" aria-label="Privacy summary">
+          <div><h2>Documents stay on your device</h2><p>No account and no cloud library. Your files, library index, notes, and signatures are handled locally, not uploaded to LTeam.</p></div>
+          <div><h2>Tools run on device</h2><p>Rendering, text recognition, search, and read-aloud preparation happen locally. Page text goes only to the speech engine you selected.</p></div>
+          <div><h2>Google services are used</h2><p>AdMob, Firebase Analytics, Firebase Crashlytics, ML Kit, and Google Play Billing operate under Google's own policies.</p></div>
+        </section>
+
+        <section>
+          <h2>1. Local Data</h2>
+          <p>FastPdf stores its data in Android app-private storage: the documents you open (names, paths, sizes, dates, page counts), library index and thumbnails, favorites, recent files, reading positions, settings, recognized-text cache, saved signatures, and Pro status. LTeam does not receive your documents, file names, text, drawings, signatures, or exported files, and does not operate a FastPdf account or cloud library.</p>
+        </section>
+
+        <section>
+          <h2>2. Permissions and File Access</h2>
+          <ul>
+            <li><strong>All files access</strong> (<code>MANAGE_EXTERNAL_STORAGE</code>) lets FastPdf find documents in your folders, keep the library in sync, and save or delete files you choose. It is granted only through Android settings. If you decline, you can still open one file at a time through Android's document picker; FastPdf copies that file to its private cache. On older Android versions the app uses the corresponding storage permissions.</li>
+            <li><strong>Internet and network state</strong> are used by Google services for ads, analytics, diagnostics, and subscription checks.</li>
+            <li><strong>Google Play billing</strong> is used when you buy or restore Pro.</li>
+            <li><strong>Wake lock and screen-on</strong> support reading and background work by Google services.</li>
+            <li><strong>File provider</strong> shares only the files you explicitly share, print, or export, with temporary read permission.</li>
+          </ul>
+          <p>You can revoke permissions in Android settings. Without storage access, folder scanning, library search, and saving beside the original are unavailable.</p>
+        </section>
+
+        <section>
+          <h2>3. Processing and Temporary Files</h2>
+          <p>Rendering and text recognition run on your device. For PDFs and e-books without a text layer, Google ML Kit recognizes text locally; the model may be downloaded through Google Play services, but recognition is on-device. Recognized text is cached privately to speed up search and read-aloud.</p>
+          <p>Read-aloud uses your device's Android TextToSpeech engine. FastPdf passes page text to the engine you selected; some engines use their provider's online services and may require a network connection, under that provider's policy. LTeam receives neither the text nor the audio.</p>
+          <p>FastPdf may create temporary files in its private cache: a file chosen through the system picker, a decrypted or unlocked copy, a compressed, rotated, printed, or saving copy. The app or Android may delete these at any time, and you can clear them in Android settings. Passwords for protected PDFs are used locally and are not sent to LTeam. Saved signatures are kept as private image files, limited to a small number of recent signatures.</p>
+        </section>
+
+        <section>
+          <h2>4. Analytics, Crash Reports, and Feedback</h2>
+          <p><strong>Firebase Analytics</strong> records app sessions, documents opened (file type and source such as library, search, or favorites), open counts, permission grants, feature use, ad impressions and failures, estimated ad revenue, purchase and restore events, free or Pro state, and app locale. <strong>Firebase Crashlytics</strong> records crash stack traces, app and Android versions, device model, timestamps, and diagnostic logs. These services are not intended to receive your document text, file names, drawings, signatures, or exported content. Google may process this data in other countries under its own policies.</p>
+          <p>If you use <strong>Send feedback</strong>, your email app opens a message pre-filled with your app version, Android version, device model, locale, and screen resolution. You can edit or remove it before sending. LTeam does not sell your personal information.</p>
+        </section>
+
+        <section>
+          <h2>5. Ads and Pro Billing</h2>
+          <p>The free version shows <strong>Google AdMob</strong> app-open and native library ads; it does not place ads inside your documents, and Pro removes ads. Google and its partners may process advertising identifiers, IP address, approximate location, device and app information, ad interactions, and diagnostics to serve and measure ads, prevent fraud, and meet legal requirements. You can manage ad personalization and your advertising ID in Android and Google settings.</p>
+          <p><strong>FastPdf Pro</strong> is purchased through Google Play on monthly or yearly terms, with a free trial where offered. Google processes payment, renewal, cancellation, and refunds. LTeam receives only the purchase and entitlement status needed to unlock Pro features; it does not receive your card or bank details. Manage or cancel in Google Play.</p>
+        </section>
+
+        <section>
+          <h2>6. Storage, Backup, and Deletion</h2>
+          <p>App-private data remains on your device until you delete it in the app where an option exists, clear the app's storage, or uninstall the app. Cache files may be removed sooner by the app or Android.</p>
+          <p>Files you create, such as edited copies, exported JPEG pages, and exported text, are saved beside the original or in a location you choose. They remain until you delete them. Clearing app data or uninstalling FastPdf does not remove them.</p>
+          <p><strong>Android backup:</strong> FastPdf allows Android's standard backup and device transfer. Depending on your device and settings, Android may copy app-private data such as preferences, the library index, recognized-text cache, and saved signatures to your Google account or a new device. Documents in shared storage follow your device's own backup settings. Manage or disable app backup in Android settings.</p>
+        </section>
+
+        <section>
+          <h2>7. Sharing and Third Parties</h2>
+          <p>FastPdf sends a file to another app only when you choose to share, print, or open it elsewhere, and grants temporary read access to that file. LTeam does not control how the receiving app or service handles its copy; their policies apply. FastPdf also relies on the Google services below:</p>
+          <ul class="links">
+            <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+            <li><a href="https://www.google.com/policies/privacy/partners/" rel="noopener">How Google uses information from apps that use Google services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" rel="noopener">Google AdMob</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a></li>
+            <li><a href="https://developers.google.com/ml-kit/terms" rel="noopener">Google ML Kit Terms</a></li>
+            <li><a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a></li>
+            <li><a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. Security and Your Responsibility</h2>
+          <p>FastPdf relies on Android's app sandbox, permissions, and temporary file grants. It does not add its own encryption to your documents, text cache, or signatures, so device lock, device encryption, and your Google account protect them. Anyone with access to your unlocked device or files may be able to read them. You are responsible for your device, your backups, and the files you open. The app is provided "as is", and you use it at your own risk.</p>
+        </section>
+
+        <section>
+          <h2>9. Changes to This Policy</h2>
+          <p>LTeam may update this policy. A revised version will be posted on this page with a new effective date, and continued use of the app means the updated policy applies.</p>
+        </section>
+
+        <section>
+          <h2>10. Contact</h2>
+          <p>Questions about this policy or FastPdf's privacy practices: <a href="mailto:lteamrick3@gmail.com">lteamrick3@gmail.com</a>.</p>
+          <div class="callout">
+            <p>Include your FastPdf version, Android version, and device model. Do not send confidential documents, PDF passwords, signatures, or payment details by email.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Copyright &copy; 2026 LTeam. FastPdf is an Android document reader by LTeam.</p>
+      </footer>
+    </div>
+  </body>
+</html>
