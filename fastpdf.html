@@ -141,7 +141,7 @@
         <div class="meta" aria-label="Policy metadata">
           <span><strong>App</strong> FastPdf (com.lteam.fastpdf)</span>
           <span><strong>Developer</strong> LTeam</span>
-          <span><strong>Effective</strong> November 15, 2026</span>
+          <span><strong>Effective</strong> November 17, 2026</span>
           <span><strong>Contact</strong> <a href="mailto:lteamrick3@gmail.com">lteamrick3@gmail.com</a></span>
         </div>
       </header>
@@ -155,7 +155,7 @@
 
         <section>
           <h2>1. Local Data</h2>
-          <p>FastPdf stores its data in Android app-private storage: the documents you open (names, paths, sizes, dates, page counts), library index and thumbnails, favorites, recent files, reading positions, settings, recognized-text cache, saved signatures, and Pro status. LTeam does not receive your documents, file names, text, drawings, signatures, or exported files, and does not operate a FastPdf account or cloud library.</p>
+          <p>FastPdf stores its data in Android app-private storage: the documents you open (names, paths, sizes, dates, page counts), library index and thumbnails, favorites, recent files, reading positions, settings, recognized-text cache, saved signatures, and Pro status. LTeam does not collect or upload your documents, document contents, drawings, signatures, or exported files, and does not operate a FastPdf account or cloud library.</p>
         </section>
 
         <section>
@@ -179,7 +179,7 @@
 
         <section>
           <h2>4. Analytics, Crash Reports, and Feedback</h2>
-          <p><strong>Firebase Analytics</strong> records app sessions, documents opened (file type and source such as library, search, or favorites), open counts, permission grants, feature use, ad impressions and failures, estimated ad revenue, purchase and restore events, free or Pro state, and app locale. <strong>Firebase Crashlytics</strong> records crash stack traces, app and Android versions, device model, timestamps, and diagnostic logs. These services are not intended to receive your document text, file names, drawings, signatures, or exported content. Google may process this data in other countries under its own policies.</p>
+          <p><strong>Firebase Analytics</strong> records app sessions, documents opened (file type and source such as library, search, or favorites), open counts, permission grants, feature use, ad impressions and failures, estimated ad revenue, purchase and restore events, free or Pro state, and app locale. <strong>Firebase Crashlytics</strong> records crash stack traces, app and Android versions, device model, timestamps, and diagnostic logs. FastPdf does not send your document contents, drawings, signatures, or exported content to these services. Google may process this data in other countries under its own policies.</p>
           <p>If you use <strong>Send feedback</strong>, your email app opens a message pre-filled with your app version, Android version, device model, locale, and screen resolution. You can edit or remove it before sending. LTeam does not sell your personal information.</p>
         </section>
 
@@ -190,10 +190,10 @@
         </section>
 
         <section>
-          <h2>6. Storage, Backup, and Deletion</h2>
+          <h2>6. Storage and Deletion</h2>
           <p>App-private data remains on your device until you delete it in the app where an option exists, clear the app's storage, or uninstall the app. Cache files may be removed sooner by the app or Android.</p>
           <p>Files you create, such as edited copies, exported JPEG pages, and exported text, are saved beside the original or in a location you choose. They remain until you delete them. Clearing app data or uninstalling FastPdf does not remove them.</p>
-          <p><strong>Android backup:</strong> FastPdf allows Android's standard backup and device transfer. Depending on your device and settings, Android may copy app-private data such as preferences, the library index, recognized-text cache, and saved signatures to your Google account or a new device. Documents in shared storage follow your device's own backup settings. Manage or disable app backup in Android settings.</p>
+          <p>When you delete a document, FastPdf renames it to a <code>.delete</code> file beside the original and keeps the most recent one for recovery. That copy is not uploaded and remains on your device until you restore it, remove it with a file manager, or delete another file.</p>
         </section>
 
         <section>
